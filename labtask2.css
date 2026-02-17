@@ -1,0 +1,67 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 5vh auto;
+    padding: 2em;
+    border: 2px solid black;
+}
+
+/* Group Selector */
+h1, h2 {
+    color: darkblue;
+    font-size: 2rem;
+}
+
+/* Absolute unit */
+h2 {
+    font-size: 24px;
+}
+
+/* Descendant Selector */
+div p {
+    font-size: 1.2em;
+    margin: 1cm 0;
+}
+
+/* Attribute Selector */
+input[type="text"] {
+    width: 50%;
+    padding: 10px;
+}
+
+/* Pseudo-classes */
+input[type="text"]:focus {
+    border: 2px solid green;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: lightblue;
+}
+
+button:active {
+    background-color: blue;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: darkred;
+}
+
+a:hover {
+    color: red;
+}

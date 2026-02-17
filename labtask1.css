@@ -1,0 +1,18 @@
+/* Universal Selector */
+* {
+    font-family: Verdana, sans-serif;
+}
+
+/* Element Selector */
+body {
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+/* ID Selector */
+#mainTitle {
+    color: green;
+    background-color: lightgray;
+    font-size: 28px;
+    text-align: center;
+}
