@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab Task 01 - JavaScript Basics</title>
+</head>
+<body>
+
+<h2>JavaScript Lab Task 01</h2>
+
+<p id="output"></p>
+
+<script>
+    /* ======
+       Part A: Basic Output
+    ======== */
+
+    alert("Welcome to JavaScript Lab Task 01!");
+    console.log("Welcome to JavaScript Lab Task 01!");
+    document.write("Welcome to JavaScript Lab Task 01! <br><br>");
+
+    /* ======
+       Part B: Variables
+       ====== */
+
+    var studentName = "Noman Mir";
+    var studentAge = 23;
+
+    var nextAge = studentAge + 1;
+    var message = "Student Name: " + studentName + "<br>Age Next Year: " + nextAge;
+
+    document.write(message + "<br><br>");
+
+    /* =======
+       Part C: User Input
+    ====== */
+
+    var num1 = Number(prompt("Enter first number:"));
+    var num2 = Number(prompt("Enter second number:"));
+
+    var sum = num1 + num2;
+    var difference = num1 - num2;
+    var product = num1 * num2;
+
+    document.write("Sum: " + sum + "<br>");
+    document.write("Difference: " + difference + "<br>");
+    document.write("Product: " + product + "<br><br>");
+
+    /* ===========
+       Part D: Even or Odd
+    ========== */
+
+    if (num1 % 2 === 0) {
+        document.write(num1 + " is Even");
+    } else {
+        document.write(num1 + " is Odd");
+    }
+</script>
+
+</body>
+</html>

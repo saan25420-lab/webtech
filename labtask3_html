@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Task 03 - Arrays and Objects</title>
+</head>
+<body>
+
+<h2>Web Technologies -- Lab Task 03</h2>
+
+<script>
+    /* ===========
+       Part A: Arrays
+    ========= */
+
+    var courses = ["Web Technologies", "Data Structures", "Algorithms", "OOP", "Database"];
+
+    document.write("<b>Part A: Course List</b><br>");
+    for (var i = 0; i < courses.length; i++) {
+        document.write(courses[i] + "<br>");
+    }
+
+    courses.push("Computer Networks");
+
+    document.write("<br><b>After Adding New Course:</b><br>");
+    for (var i = 0; i < courses.length; i++) {
+        document.write(courses[i] + "<br>");
+    }
+
+    /* ==========
+       Part B: Array Operations
+    ========== */
+
+    document.write("<br><b>Part B: Array Operations</b><br>");
+
+    document.write("Array Length: " + courses.length + "<br>");
+
+    courses.pop(); // remove last element
+    courses.unshift("Artificial Intelligence"); // add at beginning
+
+    document.write("Final Course List:<br>");
+    for (var i = 0; i < courses.length; i++) {
+        document.write(courses[i] + "<br>");
+    }
+
+    /* ===========
+       Part C: Basic Object
+    ========== */
+
+    document.write("<br><b>Part C: Student Object</b><br>");
+
+    var student = {
+        name: "Noman Mir",
+        id: "23-50003-1",
+        department: "Computer Science",
+        cgpa: 3.75
+    };
+
+    document.write("Name: " + student.name + "<br>");
+    document.write("ID: " + student.id + "<br>");
+    document.write("Department: " + student.department + "<br>");
+    document.write("CGPA: " + student.cgpa + "<br>");
+
+    /* ==========
+       Part D: Array of Objects
+    ========= */
+
+    document.write("<br><b>Part D: Array of Students</b><br>");
+
+    var students = [
+        { name: "Niloy", id: "23-59871-1", department: "CS", cgpa: 3.60 },
+        { name: "Nabil", id: "23-54202-1", department: "CS", cgpa: 3.80 },
+        { name: "Eraj", id: "23-37533-1", department: "CS", cgpa: 3.50 }
+    ];
+
+    for (var i = 0; i < students.length; i++) {
+        document.write(
+            "Name: " + students[i].name + "<br>" +
+            "ID: " + students[i].id + "<br>" +
+            "Department: " + students[i].department + "<br>" +
+            "CGPA: " + students[i].cgpa + "<br><br>"
+        );
+    }
+</script>
+
+</body>
+</html>

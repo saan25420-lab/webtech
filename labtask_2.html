@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab Task 02 - Functions, Loops and Strings</title>
+</head>
+<body>
+
+<h2>Web Technologies – Lab Task 02</h2>
+
+<script>
+    /*=========
+       Part A: Functions
+    ========== */
+
+    function calculateSum(a, b) {
+        return a + b;
+    }
+
+    var result = calculateSum(10, 20);
+    document.write("Part A: Sum of 10 and 20 = " + result + "<br><br>");
+
+    /* =========
+       Part B: Loops
+    ========== */
+
+    document.write("Part B:<br>");
+
+    // For loop: 1 to 10
+    document.write("Numbers from 1 to 10: <br>");
+    for (var i = 1; i <= 10; i++) {
+        document.write(i + " ");
+    }
+
+    document.write("<br><br>");
+
+    // While loop: Even numbers from 1 to 20
+    document.write("Even numbers from 1 to 20: <br>");
+    var num = 2;
+    while (num <= 20) {
+        document.write(num + " ");
+        num += 2;
+    }
+
+    document.write("<br><br>");
+
+    /* =========================
+       Part C: String Operations
+    ========================== */
+
+    document.write("Part C:<br>");
+
+    var fullName = "Noman Mir";
+
+    document.write("Full Name: " + fullName + "<br>");
+    document.write("Uppercase: " + fullName.toUpperCase() + "<br>");
+    document.write("Length: " + fullName.length + "<br>");
+
+    var firstName = fullName.split(" ")[0];
+    document.write("First Name: " + firstName + "<br><br>");
+
+    /* ===========
+       Part D: Function with User Input
+    ======== */
+
+    function checkStringLength() {
+        var input = prompt("Enter a string:");
+
+        if (input.length > 5) {
+            document.write("Part D: String length is greater than 5");
+        } else {
+            document.write("Part D: String length is 5 or less");
+        }
+    }
+
+    checkStringLength();
+</script>
+
+</body>
+</html>
