@@ -1,0 +1,36 @@
+body{
+    font-family: Arial;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+input{
+    padding:8px;
+    margin:5px;
+}
+
+button{
+    padding:8px 12px;
+    cursor:pointer;
+}
+
+ul{
+    list-style:none;
+    padding:0;
+}
+
+li{
+    background:white;
+    margin:10px auto;
+    padding:10px;
+    width:350px;
+    border:1px solid #ccc;
+}
+
+.present{
+    background-color:lightgreen;
+}
+
+.highlight{
+    border:3px solid red;
+}

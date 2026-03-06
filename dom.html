@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Student List DOM Lab</title>
+<link rel="stylesheet" href="dom.css">
+</head>
+
+<body>
+
+<h1>Student Management System</h1>
+
+<!-- Student Form -->
+<form id="student-form">
+    <input type="text" id="roll" placeholder="Roll No">
+    <input type="text" id="student-name" placeholder="Student Name">
+    <button type="submit" id="add-btn" disabled>Add Student</button>
+</form>
+
+<br>
+
+<!-- Search -->
+<input type="text" id="search" placeholder="Search student">
+
+<br><br>
+
+<!-- Buttons -->
+<button id="sort-btn">Sort A-Z</button>
+<button id="highlight-btn">Highlight First Student</button>
+
+<!-- Student List -->
+<ul id="student-list"></ul>
+
+<!-- Student Count -->
+<p id="total">Total students: 0</p>
+
+<!-- Attendance Count -->
+<p id="attendance">Present: 0 , Absent: 0</p>
+
+<script src="dom.js"></script>
+
+</body>
+</html>
