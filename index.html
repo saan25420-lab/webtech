@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AJAX Student Information</title>
+</head>
+
+<body>
+
+    <h2>Student Information System</h2>
+
+    <button onclick="loadData()">
+        Load Student Information
+    </button>
+
+    <br><br>
+
+    <div id="result"></div>
+
+    <script>
+
+        function loadData() {
+
+            var xhr = new XMLHttpRequest();
+
+            xhr.onreadystatechange = function () {
+
+                if (xhr.readyState == 4 && xhr.status == 200) {
+
+                    var students = JSON.parse(xhr.responseText);
+
+                    var output = "";
+
+                    for (var i = 0; i < students.length; i++) {
+
+                        output +=
+                            "<h3>Student " + (i + 1) + "</h3>" +
+                            "<p>Name: " + students[i].name + "</p>" +
+                            "<p>ID: " + students[i].id + "</p>" +
+                            "<p>Department: " + students[i].department + "</p>" +
+                            "<p>CGPA: " + students[i].cgpa + "</p><hr>";
+                    }
+
+                    document.getElementById("result").innerHTML = output;
+                }
+            };
+
+            xhr.open("GET", "student.php", true);
+
+            xhr.send();
+        }
+
+    </script>
+
+</body>
+
+</html>
